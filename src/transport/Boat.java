@@ -1,29 +1,11 @@
 package transport;
 
-public class Boat extends Vehicle implements PropellerableVehicle, CarrierCargo
+public class Boat extends WaterVehicle
 {
-	private int countCargo;
-	private int countPropeller;
 
-	@Override
-	public int getCargoCount() {
-		return countCargo;
-	}
-
-	@Override
-	public int getCountPropeller() {
-		return countPropeller;
-	}
-
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
+	public Boat(int countPropeller, int countCargo) {
+		super(countPropeller, countCargo);
+		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
-	public void transportCargo() {
-		// TODO Auto-generated method stub
-		
-	}
 }

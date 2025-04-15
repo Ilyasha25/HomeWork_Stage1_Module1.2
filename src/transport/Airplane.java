@@ -1,41 +1,11 @@
 package transport;
 
-public class Airplane extends Vehicle implements PropellerableVehicle, WheelableVehicle, WingableVehicle, CarrierCargo
+public class Airplane extends AirVehicle
 {
-	private int countCargo;
-	private int countWing;
-	private int countPropeller;
-	private int countWheel;
 
-	@Override
-	public int getCargoCount() {
-		return countCargo;
-	}
-
-	@Override
-	public int getCountWing() {
-		return countWing;
-	}
-
-	@Override
-	public int getCountWheel() {
-		return countWheel;
-	}
-
-	@Override
-	public int getCountPropeller() {
-		return countPropeller;
-	}
-
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
+	public Airplane(int countWing, int countWheel, int countPropeller, int countCargo) {
+		super(countWing, countWheel, countPropeller, countCargo);
+		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
-	public void transportCargo() {
-		// TODO Auto-generated method stub
-		
-	}
 }

@@ -1,17 +1,11 @@
 package transport;
 
-public class Taxi extends Vehicle implements WheelableVehicle
+public class Taxi extends LandVehicle
 {
-	private int countWheel;
 
-	@Override
-	public int getCountWheel() {
-		return countWheel;
+	public Taxi(int countCargo, int countWheel) {
+		super(countCargo, countWheel);
+		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
-	}
 }

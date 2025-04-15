@@ -1,35 +1,11 @@
 package transport;
 
-public class Helicopter extends Vehicle implements PropellerableVehicle, WheelableVehicle, CarrierCargo
+public class Helicopter extends AirVehicle
 {
-	private int countCargo;
-	private int countPropeller;
-	private int countWheel;
 
-	@Override
-	public int getCargoCount() {
-		return countCargo;
-	}
-
-	@Override
-	public int getCountWheel() {
-		return countWheel;
-	}
-
-	@Override
-	public int getCountPropeller() {
-		return countPropeller;
-	}
-
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
+	public Helicopter(int countWing, int countWheel, int countPropeller, int countCargo) {
+		super(countWing, countWheel, countPropeller, countCargo);
+		// TODO Auto-generated constructor stub
 	}
 	
-	@Override
-	public void transportCargo() {
-		// TODO Auto-generated method stub
-		
-	}
 }

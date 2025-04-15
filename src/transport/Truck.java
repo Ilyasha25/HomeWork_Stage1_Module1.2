@@ -1,29 +1,11 @@
 package transport;
 
-public class Truck extends Vehicle implements WheelableVehicle, CarrierCargo
+public class Truck extends LandVehicle
 {
-	private int countCargo;
-	private int countWheel;
 
-	@Override
-	public int getCargoCount() {
-		return countCargo;
+	public Truck(int countCargo, int countWheel) {
+		super(countCargo, countWheel);
+		// TODO Auto-generated constructor stub
 	}
 
-	@Override
-	public int getCountWheel() {
-		return countWheel;
-	}
-
-	@Override
-	public void move() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-	@Override
-	public void transportCargo() {
-		// TODO Auto-generated method stub
-		
-	}
 }
